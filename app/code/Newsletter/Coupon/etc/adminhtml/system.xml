@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (C) 2020  Newsletter Coupon
+ * @package   Newsletter_Coupon
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <tab id="newslettercoupon" translate="label" sortOrder="20">
+             <label>Newsletter Coupon</label>
+        </tab>
+        <section id="newscoupon" translate="label" type="text" sortOrder="320" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Newsletter Coupon</label>
+            <tab>newslettercoupon</tab>
+            <resource>Newsletter_Coupon::newsletter_coupon</resource>
+            <group id="general" translate="label" type="text"  sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="cartrule" translate="label comments" sortOrder="1" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cart Price Rule ID</label>
+                    <frontend_class>required-entry validate-number</frontend_class>
+                    <comment>Enter the newsletter's cart price rule id.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

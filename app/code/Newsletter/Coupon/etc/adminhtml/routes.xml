@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Copyright (C) 2020  Newsletter Coupon
+ * @package   Newsletter_Coupon
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="news" frontName="news">
+            <module name="Newsletter_Coupon" before="Magento_Adminhtml" />
+        </route>
+    </router>
+</config>

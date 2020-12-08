@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (C) 2020  Newsletter Coupon
+ * @package   Newsletter_Coupon
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Newsletter\Controller\Subscriber\NewAction" type="Newsletter\Coupon\Controller\Subscriber\NewAction" />
+</config>

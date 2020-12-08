@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="salesrule_coupon" resource="default" engine="innodb" comment="Salesrule Coupon">
+        <column xsi:type="smallint" name="used_in_newsletter" padding="5" unsigned="true" default="0" nullable="true" identity="false"
+                comment="Is used in Newsletter"/>
+    </table>
+     <table name="newsletter_subscriber" resource="default" engine="innodb" comment="Newsletter Subscriber">
+        <column xsi:type="varchar" name="coupon_code" nullable="true" length="155" comment="Subscriber Coupon"/>
+        <column xsi:type="smallint" name="is_coupon_applied" unsigned="true" nullable="true" identity="false"
+                default="0" comment="Is Coupon Applied"/>
+    </table>
+</schema>

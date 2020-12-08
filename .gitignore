@@ -61,7 +61,7 @@ atlassian*
 !/pub/static/.htaccess
 /M2/*
 /M2Theme/*
-/app/code/*
+
 adminer.php
 /var/*
 !/var/.htaccess
