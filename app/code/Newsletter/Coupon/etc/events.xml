@@ -9,7 +9,7 @@
     <event name="sales_model_service_quote_submit_success">
         <observer name="newsletter_couponsales_order_place_after" instance="Newsletter\Coupon\Observer\OrderSuccess" />
     </event>
-    <event name="sales_quote_address_collect_totals_after">
-        <observer name="applycouponcode" instance="Newsletter\Coupon\Observer\Applycouponcode" />
+    <event name="sales_quote_address_collect_totals_before">
+        <observer name="apply_newsletter_couponcode" instance="Newsletter\Coupon\Observer\ApplyCouponCode" />
     </event>
 </config>
